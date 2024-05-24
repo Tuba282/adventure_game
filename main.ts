@@ -24,10 +24,10 @@ async function start() {
   console.log(`
     ${chalk.greenBright("Game Principles")} 
 
-    got hit = 25 - points.
+    got hit = 25 (- points).
     If you first chose punch = 5 + points.
     If you first chose Kick = 3 + points.
-    portion = 25 - 
+    portion = 25 (+ points) 
     life = 100%
 
 
@@ -94,7 +94,7 @@ async function ready() {
         let animate = chalkAnimation.karaoke(data);
         setTimeout(() => {
           resolve(animate.stop());
-        }, 9000);
+        },7000);
       }
     );
   });
@@ -114,7 +114,7 @@ async function game() {
         name: "act",
         type: "list",
         message: "What would you like to do 🤶🏻?",
-        choices: ["Punch 🤷🏻‍♂️", "Kick 🚶🏻‍♂️", "Portion ⚱️", "Run 🏃🏻‍♂️"],
+        choices: ["Punch 🤷🏻‍♂️", "Kick 🚶🏻‍♂️", "Portion ⚱️", "Run away 🏃🏻‍♂️"],
         default: "Please Select !!! ",
       },
     ]);
